@@ -22,12 +22,12 @@ Gives all all set memory in URL  free. The object _url_ must be destroyed be the
 == urlencode ==
 *char`*` urlencode(const char`*` str, const size_t lenostr)*
 
-Encodes all special chars to hexadecimal (no character encoding done. You have to use UTF-8 yourself)
+Encodes all special chars to hexadecimal (no character encoding done. You have to use UTF-8 yourself). The parameter _lenostr_ describes how many characters should be read in from _str_
 
 == urldecode ==
 *char`*` urldecode(const char`*` str, const size_t strolen)*
 
-Decodes all hexadecimal to special chars (no character encoding done. You have to use UTF-8 yourself)
+Decodes all hexadecimal to special chars (no character encoding done. You have to use UTF-8 yourself). The parameter _strolen_ describes how many characters should be read in from _str_
 
 == qrytkn ==
 *QUERY_TOKEN`*` qrytkn(const char`*` str, size_t`*` length)*
