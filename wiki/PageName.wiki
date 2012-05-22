@@ -30,7 +30,7 @@ Encodes all special chars to hexadecimal (no character encoding done. You have t
 Decodes all hexadecimal to special chars (no character encoding done. You have to use UTF-8 yourself)
 
 == qrytkn ==
-*QUERY_TOKEN`*` qrytkn(const char`*` str, size_t* length)*
+*QUERY_TOKEN`*` qrytkn(const char`*` str, size_t`*` length)*
 
 The function _qrytkn_ separates the string _str_ with the sign "&" and copies the sequence till the sign "=" to the _name_ property of the object _QUERY_TOKEN_. The resulting array is returned. Mind, the array is unsorted and must be freed. The parameter _length_ will be reset to the number of elements in the array. The function _qrytkn_ uses urldecode() on each value before copying.
 
