@@ -1,0 +1,13 @@
+#ACLOCAL_AMFLAGS=$(ACLOCAL_AMFLAGS) -I m4
+ACLOCAL_AMFLAGS= -I m4
+
+lib_LTLIBRARIES=libsimpleurl_0.0.1.la
+lib_LIBRARIES=libsimpleurl.a
+
+
+SourceFiles = src/url.c
+
+libsimpleurl_0_0_1_la_SOURCES=$(SourceFiles)
+libsimpleurl_a_SOURCES = $(SourceFiles)
+
+libsimpleurl_0_0_1_la_CFLAGS=$(INTI_CFLAGS)
