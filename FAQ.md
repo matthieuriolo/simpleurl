@@ -1,0 +1,35 @@
+#Some answers
+
+# Compilation #
+
+The whole code can be compiled by using the common autotools binaries. For building the code you simple has to run
+
+```
+./configure
+make
+```
+
+For creating those files above you have to run
+
+```
+autoreconf -i
+```
+
+
+# Creating connections with url #
+
+The library himself does not provide directly a function for creating a socket. The reason is quit simple, there is no unique way to achieve a connection.
+
+However, there is already a great built-in function called **getaddrinfo**. You can pass to that function the address property of the URL object to get a sockaddr structure.
+
+You may want to copy the port sequence from the URL to sockaddr.
+
+
+# Find element in QUERY\_TOKEN #
+
+
+You can directly pass the property _query_ to the function qrytkn. This will return you the unsorted list of tokens in the given string. If you want find an element in token then you've to use at first qsort (use as comparison function the return value of strcmp on the property _name_). After this step you can use lsearch (or any other binary search implementation) to find the token.
+
+# Validation #
+
+The functions of the library don't do any validation on the strings. You've to make sure that they are correct. This may be done in version 0.0.2
