@@ -7,4 +7,6 @@ SimpleURL is a tokenizer written in C. The main goal was to design a real simple
 
 Documentation
 -----
-The documenation can be found in the folder wiki. You need to access the files as a raw text file because the used wiki syntax on code.google was not markup (as it is on github)
+https://github.com/matthieuriolo/simpleurl/blob/wiki/FAQ.md
+
+https://github.com/matthieuriolo/simpleurl/blob/wiki/DeveloperDocumentation.md
