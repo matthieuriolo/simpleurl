@@ -43,7 +43,7 @@ The function _strurl_ concates all sequences of the URL to one string.
 ## urldestroy ##
 **void urldestroy(URL`*` url)**
 
-Gives all set memory in URL  free. The object _url_ must be destroyed be the user himself.
+Gives all set memory in URL  free. The object _url_ must be destroyed be the user.
 
 ## urlencode ##
 **char`*` urlencode(const char`*` str, const size\_t lenostr)**
